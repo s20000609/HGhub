@@ -45,7 +45,7 @@ jobs:
       - uses: swatinem/rust-cache@v2
         with:
           workspaces: src-tauri -> target
-          key: ios-build
+          key: ios-build-xcode26
 
       - name: 安装依赖
         run: pnpm install --frozen-lockfile
